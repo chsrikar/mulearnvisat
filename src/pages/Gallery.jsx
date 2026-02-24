@@ -2,29 +2,12 @@ import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const images = [
-    { src: 'https://picsum.photos/800/600?random=1', alt: 'Campus event' },
-    { src: 'https://picsum.photos/640/480?random=2', alt: 'Workshop session' },
-    { src: 'https://picsum.photos/1280/720?random=3', alt: 'Hackathon' },
-    { src: 'https://picsum.photos/960/540?random=4', alt: 'Team building' },
-    { src: 'https://picsum.photos/900/300?random=5', alt: 'Guest lecture' },
-    { src: 'https://picsum.photos/1200/600?random=6', alt: 'Tech talk' },
-    { src: 'https://picsum.photos/400/600?random=7', alt: 'Coding session' },
-    { src: 'https://picsum.photos/300/450?random=8', alt: 'Mentorship' },
-    { src: 'https://picsum.photos/600/800?random=9', alt: 'Project showcase' },
-    { src: 'https://picsum.photos/450/600?random=10', alt: 'Award ceremony' },
-    { src: 'https://picsum.photos/600/600?random=11', alt: 'Community meetup' },
-    { src: 'https://picsum.photos/500/550?random=12', alt: 'Peer learning' },
-    { src: 'https://picsum.photos/700/850?random=13', alt: 'Open mic' },
-    { src: 'https://picsum.photos/1280/960?random=14', alt: 'Boot camp' },
-    { src: 'https://picsum.photos/1440/810?random=15', alt: 'Panel discussion' },
-    { src: 'https://picsum.photos/1024/768?random=16', alt: 'Study group' },
-    { src: 'https://picsum.photos/800/800?random=17', alt: 'Innovation lab' },
-    { src: 'https://picsum.photos/1080/720?random=18', alt: 'Cultural fest' },
-    { src: 'https://picsum.photos/1920/1080?random=19', alt: 'Annual summit' },
-    { src: 'https://picsum.photos/1280/800?random=20', alt: 'Collaboration' },
-    { src: 'https://picsum.photos/800/400?random=21', alt: 'Demo day' },
-    { src: 'https://picsum.photos/1024/576?random=22', alt: 'Networking' },
-    { src: 'https://picsum.photos/640/360?random=23', alt: 'Celebration' },
+    { src: '/gallery/WhatsApp Image 2026-02-24 at 8.21.02 PM.jpeg', alt: 'Component X' },
+    { src: '/gallery/WhatsApp Image 2026-02-24 at 8.21.44 PM.jpeg', alt: 'Puffs & Lime Challenge ' },
+    { src: '/gallery/WhatsApp Image 2026-02-24 at 8.23.59 PM.jpeg', alt: 'Speed Typing' },
+    { src: '/gallery/WhatsApp Image 2026-02-24 at 8.23.59 PM (1).jpeg', alt: 'UNO Clash' },
+    { src: '/gallery/WhatsApp Image 2026-02-24 at 8.23.59 PM (2).jpeg', alt: 'Picture Perfect' },
+    { src: '/gallery/WhatsApp Image 2026-02-24 at 8.25.07 PM.jpeg', alt: 'Discover Mulearn Pathways' },
 ]
 
 function Gallery({ darkMode }) {
@@ -70,7 +53,7 @@ function Gallery({ darkMode }) {
                         <span className="gradient-text">Gallery</span>
                     </h1>
                     <p className={`text-base md:text-lg max-w-2xl mx-auto ${darkMode ? 'text-surface-400' : 'text-surface-500'}`}>
-                        A glimpse into the vibrant life at μLearn VISAT — from
+                        A glimpse into the vibrant life at muLearn VISAT — from
                         hackathons and workshops to celebrations and community moments.
                     </p>
                 </div>

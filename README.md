@@ -1,6 +1,6 @@
-# μLearn VISAT Student Branch Website
+# muLearn VISAT Student Branch Website
 
-A modern, minimal, responsive website for the μLearn VISAT Student Branch built with **React + Vite + UnoCSS**.
+A modern, minimal, responsive website for the muLearn VISAT Student Branch built with **React + Vite + UnoCSS**.
 
 ## 🚀 Tech Stack
 
@@ -60,4 +60,4 @@ npm run build
 
 ## 📝 License
 
-MIT — Built with 💜 by the μLearn VISAT community
+MIT — Built with 💜 by the muLearn VISAT community

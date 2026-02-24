@@ -50,7 +50,7 @@ function Committee({ darkMode }) {
                         <span className="gradient-text">Committee</span>
                     </h1>
                     <p className={`text-base md:text-lg max-w-2xl mx-auto ${darkMode ? 'text-surface-400' : 'text-surface-500'}`}>
-                        The passionate individuals driving μLearn VISAT forward through
+                        The passionate individuals driving muLearn VISAT forward through
                         leadership, innovation, and community building.
                     </p>
                 </div>

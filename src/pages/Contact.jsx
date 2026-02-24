@@ -270,7 +270,7 @@ function Contact({ darkMode }) {
 
                                 <div className="relative z-10">
                                     <div className="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-5">
-                                        <span className="text-2xl font-black">μ</span>
+                                        <span className="text-2xl font-black">mu</span>
                                     </div>
                                     <h3 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug mb-3">
                                         Let's build something{' '}

@@ -43,11 +43,11 @@ function Footer({ darkMode }) {
                         <div className="flex items-center gap-2">
                             <img
                                 src="/mulearn-logo.png"
-                                alt="μLearn VISAT"
+                                alt="muLearn VISAT"
                                 className="w-9 h-9 rounded-xl object-contain"
                             />
                             <span className="font-bold text-lg">
-                                μLearn <span className="text-primary-400">VISAT</span>
+                                muLearn <span className="text-primary-400">VISAT</span>
                             </span>
                         </div>
                         <p className="text-surface-400 text-sm leading-relaxed max-w-xs">
@@ -105,10 +105,10 @@ function Footer({ darkMode }) {
                 {/* Bottom Bar */}
                 <div className="mt-8 sm:mt-12 pt-6 border-t border-surface-800 flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4 text-center md:text-left">
                     <p className="text-surface-500 text-sm">
-                        © {new Date().getFullYear()} μLearn VISAT Student Branch. All rights reserved.
+                        © {new Date().getFullYear()} muLearn VISAT Student Branch. All rights reserved.
                     </p>
                     <p className="text-surface-600 text-xs">
-                        Built with 💜 by the μLearn VISAT community
+                        Built with 💜 by the muLearn VISAT community
                     </p>
                 </div>
             </div>

@@ -5,7 +5,7 @@ export const leadership = [
         name: "Jishamol T R",
         role: "Lead Enabler",
         image: "/images/Jishamol T R.jpeg",
-        bio: "Enabling students to take charge of their own learning journey. At μLearn, we create the environment — the magic comes from the students themselves.",
+        bio: "Enabling students to take charge of their own learning journey. At muLearn, we create the environment — the magic comes from the students themselves.",
     },
     {
         id: 2,
@@ -19,14 +19,14 @@ export const leadership = [
         name: "Alex Benny",
         role: "Campus Lead",
         image: "/images/alex-benny.jpeg",
-        bio: "Leading μLearn VISAT has been an incredible journey. Together, we're building a community where every student can discover their true potential and grow without limitations.",
+        bio: "Leading muLearn VISAT has been an incredible journey. Together, we're building a community where every student can discover their true potential and grow without limitations.",
     },
     {
         id: 4,
         name: "Chinthapenta Srikar",
         role: "Co-Lead",
         image: "/images/srikar.jpeg",
-        bio: "At μLearn, we believe learning goes beyond classrooms. I'm passionate about creating an ecosystem where students collaborate, innovate, and support each other's growth.",
+        bio: "At muLearn, we believe learning goes beyond classrooms. I'm passionate about creating an ecosystem where students collaborate, innovate, and support each other's growth.",
     },
     {
         id: 5,
@@ -47,21 +47,21 @@ export const leadership = [
         name: "Anand M S",
         role: "Media Lead",
         image: "/images/anand-ms.jpeg",
-        bio: "Storytelling is at the heart of community building. I help amplify our members' voices and share the amazing things happening at μLearn VISAT.",
+        bio: "Storytelling is at the heart of community building. I help amplify our members' voices and share the amazing things happening at muLearn VISAT.",
     },
     {
         id: 8,
         name: "Elna",
         role: "Design Lead",
         image: "/images/elna.jpeg",
-        bio: "Design is about solving problems beautifully. I'm proud to shape the visual identity of μLearn VISAT and mentor aspiring designers along the way.",
+        bio: "Design is about solving problems beautifully. I'm proud to shape the visual identity of muLearn VISAT and mentor aspiring designers along the way.",
     },
     {
         id: 9,
         name: "Albin Jose",
         role: "Outreach Lead",
         image: "/images/albin-jose.jpeg",
-        bio: "Building bridges between μLearn and the wider community. Outreach is how we connect, grow, and bring new energy into everything we do.",
+        bio: "Building bridges between muLearn and the wider community. Outreach is how we connect, grow, and bring new energy into everything we do.",
     },
 ]
 

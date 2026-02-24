@@ -89,17 +89,9 @@ function Home({ darkMode }) {
                 />
 
                 <div className="container-main relative z-10 text-center py-12 sm:py-16 md:py-20">
-                    {/* Badge */}
-                    <div className="reveal stagger-1 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-50 border border-primary-100 mb-8 opacity-0">
-                        <span className="w-2 h-2 rounded-full bg-primary-500 animate-pulse" />
-                        <span className={`text-sm font-medium ${darkMode ? 'text-primary-300' : 'text-primary-700'}`}>
-                            Now Open for New Members
-                        </span>
-                    </div>
-
                     {/* Heading */}
                     <h1 className="reveal stagger-2 opacity-0 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight mb-4 sm:mb-6">
-                        <span className="animated-gradient-text">μLearn VISAT</span>
+                        <span className="animated-gradient-text">muLearn VISAT</span>
                         <br />
                         <span className={darkMode ? 'text-surface-200' : 'text-surface-800'}>
                             Student Branch
@@ -156,7 +148,7 @@ function Home({ darkMode }) {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                         <div className="reveal">
                             <span className={`text-sm font-semibold uppercase tracking-wider ${darkMode ? 'text-primary-400' : 'text-primary-600'}`}>
-                                About μLearn
+                                About muLearn
                             </span>
                             <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-4 sm:mb-6 ${darkMode ? 'text-white' : 'text-surface-900'}`}>
                                 A Learning Ecosystem{' '}
@@ -164,8 +156,8 @@ function Home({ darkMode }) {
                             </h2>
                             <div className={`space-y-4 text-base leading-relaxed ${darkMode ? 'text-surface-400' : 'text-surface-600'}`}>
                                 <p>
-                                    μLearn is a community-driven learning ecosystem that empowers students to
-                                    discover their potential beyond traditional academics. At VISAT, μLearn is not
+                                    muLearn is a community-driven learning ecosystem that empowers students to
+                                    discover their potential beyond traditional academics. At VISAT, muLearn is not
                                     limited to technical learning — it fosters creativity, passion, leadership, and
                                     career development through peer-led initiatives, hands-on workshops, and
                                     collaborative experiences across diverse fields.
@@ -173,7 +165,7 @@ function Home({ darkMode }) {
                                 <p>
                                     Our "Build-in-Public" philosophy encourages students to share their journey,
                                     explore their interests, and grow with the support of a like-minded community.
-                                    μLearn VISAT provides a space where you can learn, create, and shape your future
+                                    muLearn VISAT provides a space where you can learn, create, and shape your future
                                     with confidence.
                                 </p>
                             </div>
@@ -223,7 +215,7 @@ function Home({ darkMode }) {
                                     tag="Grow"
                                     tagColor="bg-emerald-600"
                                     title="Holistic Growth"
-                                    description="μLearn helps you grow not just in skills, but also in mindset, leadership, and overall personal development."
+                                    description="muLearn helps you grow not just in skills, but also in mindset, leadership, and overall personal development."
                                     darkMode={darkMode}
                                 />
                             </div>
@@ -232,7 +224,7 @@ function Home({ darkMode }) {
                                     tag="Share"
                                     tagColor="bg-amber-600"
                                     title="Share & Inspire"
-                                    description="Share your journey, express your progress, and inspire others through your experiences. μLearn creates a supportive environment where every step of growth is valued and celebrated."
+                                    description="Share your journey, express your progress, and inspire others through your experiences. muLearn creates a supportive environment where every step of growth is valued and celebrated."
                                     darkMode={darkMode}
                                 />
                             </div>
@@ -241,7 +233,7 @@ function Home({ darkMode }) {
                                     tag="Explore"
                                     tagColor="bg-cyan-600"
                                     title="Explore Your Potential"
-                                    description="μLearn provides a space where you can explore your interests, follow your passion, and discover your true potential in a community that supports your growth."
+                                    description="muLearn provides a space where you can explore your interests, follow your passion, and discover your true potential in a community that supports your growth."
                                     darkMode={darkMode}
                                 />
                             </div>
@@ -296,7 +288,7 @@ function Home({ darkMode }) {
                                 Ready to Start Your Journey?
                             </h2>
                             <p className="text-primary-200 text-base sm:text-lg max-w-xl mx-auto mb-6 sm:mb-8">
-                                At μLearn VIT, students are not just participants — they are creators,
+                                At muLearn VIT, students are not just participants — they are creators,
                                 innovators, and leaders. Chase your passion, unlock new opportunities,
                                 and become ready to contribute, lead, and make an impact.
                             </p>
