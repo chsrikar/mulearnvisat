@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Check, Loader2, Mail, Phone, MapPin, Send } from 'lucide-react'
+import { Check, Loader2, Mail, MapPin, Send } from 'lucide-react'
 import { cn } from '../lib/utils'
 import emailjs from '@emailjs/browser'
 
@@ -290,14 +290,8 @@ function Contact({ darkMode }) {
                                     {
                                         icon: Mail,
                                         label: 'Email',
-                                        value: 'mulearn.visat@gmail.com',
-                                        href: 'mailto:mulearn.visat@gmail.com',
-                                    },
-                                    {
-                                        icon: Phone,
-                                        label: 'Phone',
-                                        value: '+91 98765 43210',
-                                        href: 'tel:+919876543210',
+                                        value: 'mulearn@visat.ac.in',
+                                        href: 'mailto:mulearn@visat.ac.in',
                                     },
                                     {
                                         icon: MapPin,

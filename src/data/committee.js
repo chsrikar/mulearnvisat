@@ -72,8 +72,8 @@ export const committees = [
         color: "primary",
         members: [
             { id: 8, name: "Albin Saju", image: "/images/albin-saju.jpeg" },
-            { id: 9, name: "Anashwara", image: "/images/anashwara.jpeg" },
-            { id: 10, name: "Amal", image: "/images/amal.jpeg" },
+            { id: 9, name: "Anashwara", image: "/images/Anashwara.jpeg" },
+            { id: 10, name: "Amal", image: "/images/Amal.jpeg" },
         ],
     },
     {
@@ -90,8 +90,8 @@ export const committees = [
         members: [
             { id: 13, name: "Elna", image: "/images/elna.jpeg" },
             { id: 14, name: "Aryanandana", image: "/images/aryanandana.jpeg" },
-            { id: 15, name: "Gagan", image: "/images/gagan.jpeg" },
-            { id: 16, name: "Anjana", image: "/images/anjana.jpeg" },
+            { id: 15, name: "Gagan", image: "/images/Gagan.jpeg" },
+            { id: 16, name: "Anjana", image: "/images/Anjana.jpeg" },
         ],
     },
     {
@@ -99,8 +99,8 @@ export const committees = [
         color: "amber",
         members: [
             { id: 17, name: "Albin Jose", image: "/images/albin-jose.jpeg" },
-            { id: 18, name: "Abhinand", image: "/images/abhinand.jpeg" },
-            { id: 19, name: "Tadrupa", image: "/images/tadrupa.jpeg" },
+            { id: 18, name: "Abhinand", image: "/images/Abhinand.jpeg" },
+            { id: 19, name: "Tadrupa", image: "/images/Tadrupa.jpeg" },
         ],
     },
     {
@@ -108,7 +108,7 @@ export const committees = [
         color: "rose",
         members: [
             { id: 28, name: "Devika Baiju", image: "/images/devika-baiju.jpeg" },
-            { id: 29, name: "Sivaprasad S", image: "/images/sivaprasad.jpeg" },
+            { id: 29, name: "Sivaprasad S", image: "/images/shivaprasad.jpeg" },
         ],
     },
 ]

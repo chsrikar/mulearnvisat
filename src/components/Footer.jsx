@@ -96,7 +96,7 @@ function Footer({ darkMode }) {
                             ))}
                         </div>
                         <div className="mt-6 text-sm text-surface-500">
-                            <p>mulearn.visat@gmail.com</p>
+                            <p>mulearn@visat.ac.in</p>
                             <p className="mt-1">VISAT, Elanji, Ernakulam, Kerala</p>
                         </div>
                     </div>
