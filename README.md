@@ -600,4 +600,4 @@ Usage:
 
 ## License
 
-This project is maintained by the **muLearn VISAT** student community at VISAT Engineering College, Elanji, Kerala.
+This project is maintained by the **muLearn VISAT** student community at VISAT Engineering College, Elanji, Kerala and developed by **Chinthapenta Srikar**
