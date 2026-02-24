@@ -164,20 +164,17 @@ function Home({ darkMode }) {
                             </h2>
                             <div className={`space-y-4 text-base leading-relaxed ${darkMode ? 'text-surface-400' : 'text-surface-600'}`}>
                                 <p>
-                                    μLearn VIT is more than just a technical community — it is a student-driven
-                                    ecosystem designed to help individuals discover their true potential. At μLearn,
-                                    learning is not restricted to coding or technical expertise; it is about exploring
-                                    passions, nurturing creativity, and developing skills that align with each
-                                    student's interests and aspirations. Whether someone is passionate about
-                                    technology, design, entrepreneurship, media, leadership, or any creative field,
-                                    μLearn provides a platform to explore, experiment, and grow without limitations.
+                                    μLearn is a community-driven learning ecosystem that empowers students to
+                                    discover their potential beyond traditional academics. At VISAT, μLearn is not
+                                    limited to technical learning — it fosters creativity, passion, leadership, and
+                                    career development through peer-led initiatives, hands-on workshops, and
+                                    collaborative experiences across diverse fields.
                                 </p>
                                 <p>
-                                    What makes μLearn unique is its focus on learning by doing. Through hands-on
-                                    projects, collaborative activities, workshops, and real-world problem solving,
-                                    students gain practical exposure that goes beyond traditional classroom education.
-                                    It creates an environment where students learn from peers, share ideas, build
-                                    meaningful connections, and support each other's growth.
+                                    Our "Build-in-Public" philosophy encourages students to share their journey,
+                                    explore their interests, and grow with the support of a like-minded community.
+                                    μLearn VISAT provides a space where you can learn, create, and shape your future
+                                    with confidence.
                                 </p>
                             </div>
                             <div className="mt-6 sm:mt-8 flex items-center gap-4 sm:gap-6">
@@ -202,36 +199,49 @@ function Home({ darkMode }) {
                             </div>
                         </div>
 
-                        <div className="reveal grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <RetroCard
-                                tag="Learn"
-                                tagColor="bg-primary-600"
-                                title="Explore Your Passions"
-                                description="Whether you're into technology, design, entrepreneurship, media, or leadership — μLearn gives you the platform to explore, experiment, and grow without limitations."
-                                darkMode={darkMode}
-                            />
-                            <div className="sm:mt-8">
+                        <div className="reveal sm:columns-2 gap-4 space-y-4">
+                            <div>
                                 <RetroCard
-                                    tag="Build"
-                                    tagColor="bg-accent-600"
-                                    title="Learn by Doing"
-                                    description="Through hands-on projects, collaborative activities, and real-world problem solving, gain practical exposure that goes beyond traditional classrooms."
+                                    tag="Learn"
+                                    tagColor="bg-primary-600"
+                                    title="Discover & Learn"
+                                    description="Explore structured learning experiences designed to help you discover your strengths, build valuable skills, and grow at your own pace."
                                     darkMode={darkMode}
                                 />
                             </div>
-                            <RetroCard
-                                tag="Grow"
-                                tagColor="bg-emerald-600"
-                                title="Holistic Development"
-                                description="Build both technical and non-technical skills. μLearn encourages curiosity, builds confidence, and fosters creativity, leadership, and innovation."
-                                darkMode={darkMode}
-                            />
-                            <div className="sm:mt-8">
+                            <div className="sm:mt-8 break-inside-avoid">
+                                <RetroCard
+                                    tag="Build"
+                                    tagColor="bg-accent-600"
+                                    title="Create & Build"
+                                    description="Turn your ideas into meaningful outcomes through hands-on experiences and collaborative efforts."
+                                    darkMode={darkMode}
+                                />
+                            </div>
+                            <div className="break-inside-avoid">
+                                <RetroCard
+                                    tag="Grow"
+                                    tagColor="bg-emerald-600"
+                                    title="Holistic Growth"
+                                    description="μLearn helps you grow not just in skills, but also in mindset, leadership, and overall personal development."
+                                    darkMode={darkMode}
+                                />
+                            </div>
+                            <div className="sm:mt-8 break-inside-avoid">
                                 <RetroCard
                                     tag="Share"
                                     tagColor="bg-amber-600"
-                                    title="Connect & Inspire"
-                                    description="Share your journey, connect with people who inspire you, and support each other's growth in a vibrant peer-driven community."
+                                    title="Share & Inspire"
+                                    description="Share your journey, express your progress, and inspire others through your experiences. μLearn creates a supportive environment where every step of growth is valued and celebrated."
+                                    darkMode={darkMode}
+                                />
+                            </div>
+                            <div className="break-inside-avoid">
+                                <RetroCard
+                                    tag="Explore"
+                                    tagColor="bg-cyan-600"
+                                    title="Explore Your Potential"
+                                    description="μLearn provides a space where you can explore your interests, follow your passion, and discover your true potential in a community that supports your growth."
                                     darkMode={darkMode}
                                 />
                             </div>

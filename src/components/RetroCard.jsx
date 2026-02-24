@@ -1,14 +1,14 @@
 function RetroCard({ tag, tagColor = 'bg-primary-500', title, description, author, authorRole, darkMode }) {
     return (
         <article
-            className={`flex w-full flex-col items-start justify-between border-4 p-5 sm:p-6 transition-shadow duration-300 ${darkMode
+            className={`flex w-full flex-col items-start justify-start border-4 p-5 sm:p-6 transition-shadow duration-300 ${darkMode
                     ? 'bg-[#1a1a24] border-surface-200 shadow-[6px_6px_0_0_rgba(255,255,255,0.8)] hover:shadow-[10px_10px_0_0_rgba(255,255,255,0.9)]'
                     : 'bg-white border-surface-900 shadow-[6px_6px_0_0_#171717] hover:shadow-[10px_10px_0_0_#171717]'
                 }`}
         >
             {/* Tag badges */}
             {tag && (
-                <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
+                <div className="mb-2 flex flex-wrap items-center gap-2 text-xs">
                     <span
                         className={`${tagColor} px-3 py-1 font-bold text-white border-2 ${darkMode ? 'border-surface-200' : 'border-surface-900'
                             }`}
@@ -21,7 +21,7 @@ function RetroCard({ tag, tagColor = 'bg-primary-500', title, description, autho
             {/* Title & description */}
             <div className="group relative">
                 <h3
-                    className={`mt-1 text-lg sm:text-xl leading-snug font-black uppercase ${darkMode ? 'text-white' : 'text-surface-900'
+                    className={`mt-0 text-lg sm:text-xl leading-snug font-black uppercase ${darkMode ? 'text-white' : 'text-surface-900'
                         }`}
                 >
                     {title}

@@ -37,12 +37,7 @@ function Navbar({ darkMode, setDarkMode }) {
     return (
         <nav
             id="main-nav"
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                ? darkMode
-                    ? 'bg-[#0f0f14]/60 backdrop-blur-nav'
-                    : 'bg-white/60 backdrop-blur-nav'
-                : 'bg-transparent'
-                }`}
+            className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent"
         >
             <div className="container-main">
                 <div className="flex items-center justify-between h-16 md:h-18">
@@ -52,9 +47,11 @@ function Navbar({ darkMode, setDarkMode }) {
                         id="nav-logo"
                         className="flex items-center gap-2 no-underline group"
                     >
-                        <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-600 to-accent-500 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                            <span className="text-white font-bold text-lg">μ</span>
-                        </div>
+                        <img
+                            src="/mulearn-logo.png"
+                            alt="μLearn VISAT"
+                            className="w-9 h-9 rounded-xl object-contain transition-transform duration-300 group-hover:scale-110"
+                        />
                         <span className={`font-bold text-lg ${darkMode ? 'text-white' : 'text-surface-900'} transition-colors`}>
                             μLearn <span className="text-primary-600 font-medium">VISAT</span>
                         </span>

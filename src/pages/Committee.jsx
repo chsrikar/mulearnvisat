@@ -7,6 +7,7 @@ const committeeTagColors = {
     accent: 'bg-accent-600',
     emerald: 'bg-emerald-600',
     amber: 'bg-amber-600',
+    rose: 'bg-rose-600',
 }
 
 const committeeBorderAccents = {
@@ -14,6 +15,7 @@ const committeeBorderAccents = {
     accent: 'border-l-accent-500',
     emerald: 'border-l-emerald-500',
     amber: 'border-l-amber-500',
+    rose: 'border-l-rose-500',
 }
 
 function Committee({ darkMode }) {
@@ -75,6 +77,65 @@ function Committee({ darkMode }) {
                         Our <span className="gradient-text">Committees</span> &{' '}
                         <span className="gradient-text">Interest Groups</span>
                     </h2>
+                </div>
+
+                {/* Lead Enabler & Mentor — retro cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 mb-10 sm:mb-14">
+                    {[
+                        { name: "Jishamol T R", role: "Lead Enabler", image: "/images/Jishamol T R.jpeg", color: "bg-violet-600", border: "border-l-violet-500" },
+                        { name: "Megha R", role: "Mentor", image: "/images/Megha R.jpeg", color: "bg-sky-600", border: "border-l-sky-500" },
+                    ].map((person) => (
+                        <article
+                            key={person.name}
+                            className={`reveal flex w-full flex-col items-start justify-start border-4 p-5 sm:p-6 transition-shadow duration-300 ${
+                                darkMode
+                                    ? 'bg-[#1a1a24] border-surface-200 shadow-[6px_6px_0_0_rgba(255,255,255,0.8)] hover:shadow-[10px_10px_0_0_rgba(255,255,255,0.9)]'
+                                    : 'bg-white border-surface-900 shadow-[6px_6px_0_0_#171717] hover:shadow-[10px_10px_0_0_#171717]'
+                            }`}
+                        >
+                            {/* Tag */}
+                            <div className="mb-2 flex flex-wrap items-center gap-2 text-xs">
+                                <span
+                                    className={`${person.color} px-3 py-1 font-bold text-white border-2 ${
+                                        darkMode ? 'border-surface-200' : 'border-surface-900'
+                                    }`}
+                                >
+                                    {person.role}
+                                </span>
+                            </div>
+
+                            {/* Title */}
+                            <h3
+                                className={`mt-0 text-lg sm:text-xl leading-snug font-black uppercase ${
+                                    darkMode ? 'text-white' : 'text-surface-900'
+                                }`}
+                            >
+                                {person.role}
+                            </h3>
+
+                            {/* Person */}
+                            <div className="relative mt-5 sm:mt-6 flex items-center gap-x-3">
+                                <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 flex-shrink-0 ${
+                                    darkMode ? 'border-surface-600' : 'border-surface-900'
+                                }`}>
+                                    <img
+                                        src={person.image}
+                                        alt={person.name}
+                                        className="w-full h-full object-cover"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className="text-sm leading-5">
+                                    <p className={`font-black ${darkMode ? 'text-white' : 'text-surface-900'}`}>
+                                        {person.name}
+                                    </p>
+                                    <p className={`font-bold text-xs ${darkMode ? 'text-surface-400' : 'text-surface-500'}`}>
+                                        {person.role}
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    ))}
                 </div>
 
                 {/* Committees — retro cards */}
