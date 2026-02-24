@@ -1,50 +1,78 @@
-export const committee = [
+// Leadership — shown in AnimatedTestimonials
+export const leadership = [
     {
         id: 1,
-        name: "Arjun Menon",
+        name: "Alex Benny",
         role: "Campus Lead",
         image: "/images/member1.png",
-        linkedin: "https://linkedin.com/in/arjunmenon",
-        bio: "Leading μLearn VISAT has been an incredible journey. Together, we're building a community where every student can discover their potential and grow beyond limits.",
+        bio: "Leading μLearn VISAT has been an incredible journey. Together, we're building a community where every student can discover their true potential and grow without limitations.",
     },
     {
         id: 2,
-        name: "Sneha Nair",
-        role: "Vice Lead",
+        name: "Chinthapenta Srikar",
+        role: "Co-Lead",
         image: "/images/member2.png",
-        linkedin: "https://linkedin.com/in/snehanair",
-        bio: "I believe in the power of peer learning. When students teach students, magic happens — and that's exactly what we create here every single day.",
+        bio: "At μLearn, we believe learning goes beyond classrooms. I'm passionate about creating an ecosystem where students collaborate, innovate, and support each other's growth.",
     },
     {
         id: 3,
-        name: "Rahul Krishnan",
-        role: "Tech Lead",
+        name: "Devika Baiju",
+        role: "Creative & Marketing Lead",
         image: "/images/member3.png",
-        linkedin: "https://linkedin.com/in/rahulkrishnan",
-        bio: "From hackathons to open-source sprints, our tech initiatives push students to build real things. There's no better way to learn than by doing.",
-    },
-    {
-        id: 4,
-        name: "Anjali Sharma",
-        role: "Design Lead",
-        image: "/images/member4.png",
-        linkedin: "https://linkedin.com/in/anjalisharma",
-        bio: "Design is about solving problems beautifully. I'm proud to shape the visual identity of μLearn VISAT and mentor aspiring designers along the way.",
-    },
-    {
-        id: 5,
-        name: "Vishnu Dev",
-        role: "Events Coordinator",
-        image: "/images/member5.png",
-        linkedin: "https://linkedin.com/in/vishnudev",
-        bio: "Every event we organize is a chance to spark curiosity. From workshops to community meetups, we create spaces where ideas come to life.",
-    },
-    {
-        id: 6,
-        name: "Meera Thomas",
-        role: "Content & Outreach",
-        image: "/images/member1.png",
-        linkedin: "https://linkedin.com/in/meerathomas",
-        bio: "Storytelling is at the heart of community building. I help amplify our members' voices and share the amazing things happening at μLearn VISAT.",
+        bio: "Creativity is the bridge between ideas and impact. I love crafting stories and campaigns that showcase the amazing things our community builds every day.",
     },
 ]
+
+// Core Committees — shown in grouped grid cards
+export const committees = [
+    {
+        name: "Tech Committee",
+        color: "primary",
+        members: [
+            { id: 4, name: "Albin Saju", image: "/images/member4.png" },
+            { id: 5, name: "Anashwara", image: "/images/member5.png" },
+            { id: 6, name: "Amal", image: "/images/member1.png" },
+        ],
+    },
+    {
+        name: "Media Committee",
+        color: "accent",
+        members: [
+            { id: 7, name: "Anand M S", image: "/images/member2.png" },
+            { id: 8, name: "Pratham", image: "/images/member3.png" },
+        ],
+    },
+    {
+        name: "Design Committee",
+        color: "emerald",
+        members: [
+            { id: 9, name: "Elna", image: "/images/member4.png" },
+            { id: 10, name: "Aryanandana", image: "/images/member5.png" },
+            { id: 11, name: "Gagan", image: "/images/member1.png" },
+            { id: 12, name: "Anjana", image: "/images/member2.png" },
+        ],
+    },
+    {
+        name: "Outreach Committee",
+        color: "amber",
+        members: [
+            { id: 13, name: "Albin Jose", image: "/images/member3.png" },
+            { id: 14, name: "Abhinand", image: "/images/member4.png" },
+            { id: 15, name: "Tadrupa", image: "/images/member5.png" },
+        ],
+    },
+]
+
+// Interest Group Leads — shown in IG Leads section
+export const igLeads = [
+    { id: 16, name: "Alex Benny", role: "IoT", image: "/images/member1.png" },
+    { id: 17, name: "Pratham", role: "Web Development", image: "/images/member3.png" },
+    { id: 18, name: "Elna", role: "UI/UX", image: "/images/member4.png" },
+    { id: 19, name: "Albin Jose", role: "Non-Circuit", image: "/images/member3.png" },
+    { id: 20, name: "Rifa", role: "Innovation & Entrepreneurship", image: "/images/member2.png" },
+    { id: 21, name: "Devika Baiju", role: "Comics", image: "/images/member3.png" },
+    { id: 22, name: "Srikar", role: "AI & ML", image: "/images/member2.png" },
+]
+
+// Backward-compatible default export
+export const committee = leadership

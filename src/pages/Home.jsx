@@ -31,7 +31,7 @@ const features = [
             </svg>
         ),
         title: 'Peer Learning',
-        description: 'Learn alongside fellow students through collaborative workshops, study groups, and knowledge sharing sessions.',
+        description: 'Learn from peers, share ideas, and build meaningful connections in an environment that supports collaborative growth and knowledge sharing.',
     },
     {
         icon: (
@@ -40,7 +40,7 @@ const features = [
             </svg>
         ),
         title: 'Real-world Skill Building',
-        description: 'Gain hands-on experience with modern technologies, industry tools, and real-world project development.',
+        description: 'Gain practical exposure through hands-on projects, collaborative activities, and real-world problem solving that goes beyond traditional classroom education.',
     },
     {
         icon: (
@@ -49,7 +49,7 @@ const features = [
             </svg>
         ),
         title: 'Industry Collaboration',
-        description: 'Connect with industry professionals, mentors, and tech communities to build your career network.',
+        description: 'Build industry-relevant skills, connect with mentors, and prepare for future challenges and opportunities through a culture of continuous learning and personal growth.',
     },
 ]
 
@@ -108,10 +108,10 @@ function Home({ darkMode }) {
 
                     {/* Subheading */}
                     <p className={`reveal stagger-3 opacity-0 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed ${darkMode ? 'text-surface-400' : 'text-surface-500'}`}>
-                        Building a Culture of{' '}
-                        <span className="font-semibold text-primary-600">Curiosity</span>,{' '}
-                        <span className="font-semibold text-accent-600">Capability</span> &{' '}
-                        <span className="font-semibold text-primary-600">Contribution</span>
+                        A student-led learning ecosystem focused on{' '}
+                        <span className="font-semibold text-primary-600">Collaboration</span>,{' '}
+                        <span className="font-semibold text-accent-600">Innovation</span> &{' '}
+                        <span className="font-semibold text-primary-600">Experiential Learning</span>
                     </p>
 
                     {/* CTA Buttons */}
@@ -164,15 +164,20 @@ function Home({ darkMode }) {
                             </h2>
                             <div className={`space-y-4 text-base leading-relaxed ${darkMode ? 'text-surface-400' : 'text-surface-600'}`}>
                                 <p>
-                                    μLearn is a community-driven learning ecosystem that empowers students
-                                    to learn, build, and grow together. At VISAT, we bring this vision to
-                                    life through peer-led initiatives, hands-on workshops, and collaborative
-                                    projects.
+                                    μLearn VIT is more than just a technical community — it is a student-driven
+                                    ecosystem designed to help individuals discover their true potential. At μLearn,
+                                    learning is not restricted to coding or technical expertise; it is about exploring
+                                    passions, nurturing creativity, and developing skills that align with each
+                                    student's interests and aspirations. Whether someone is passionate about
+                                    technology, design, entrepreneurship, media, leadership, or any creative field,
+                                    μLearn provides a platform to explore, experiment, and grow without limitations.
                                 </p>
                                 <p>
-                                    Our "Build-in-Public" philosophy encourages students to share their
-                                    learning journeys, celebrate progress, and inspire others. Whether
-                                    you are a beginner or an experienced developer, there is a place for you here.
+                                    What makes μLearn unique is its focus on learning by doing. Through hands-on
+                                    projects, collaborative activities, workshops, and real-world problem solving,
+                                    students gain practical exposure that goes beyond traditional classroom education.
+                                    It creates an environment where students learn from peers, share ideas, build
+                                    meaningful connections, and support each other's growth.
                                 </p>
                             </div>
                             <div className="mt-6 sm:mt-8 flex items-center gap-4 sm:gap-6">
@@ -201,32 +206,32 @@ function Home({ darkMode }) {
                             <RetroCard
                                 tag="Learn"
                                 tagColor="bg-primary-600"
-                                title="Structured Learning Paths"
-                                description="Explore curated learning tracks across web development, AI/ML, mobile apps, cloud computing, and more."
+                                title="Explore Your Passions"
+                                description="Whether you're into technology, design, entrepreneurship, media, or leadership — μLearn gives you the platform to explore, experiment, and grow without limitations."
                                 darkMode={darkMode}
                             />
                             <div className="sm:mt-8">
                                 <RetroCard
                                     tag="Build"
                                     tagColor="bg-accent-600"
-                                    title="Real Projects, Real Impact"
-                                    description="Work on meaningful projects that solve real problems — from open-source contributions to community tools."
+                                    title="Learn by Doing"
+                                    description="Through hands-on projects, collaborative activities, and real-world problem solving, gain practical exposure that goes beyond traditional classrooms."
                                     darkMode={darkMode}
                                 />
                             </div>
                             <RetroCard
                                 tag="Grow"
                                 tagColor="bg-emerald-600"
-                                title="Level Up Your Career"
-                                description="Gain industry-ready skills, build your portfolio, and connect with mentors who guide your journey."
+                                title="Holistic Development"
+                                description="Build both technical and non-technical skills. μLearn encourages curiosity, builds confidence, and fosters creativity, leadership, and innovation."
                                 darkMode={darkMode}
                             />
                             <div className="sm:mt-8">
                                 <RetroCard
                                     tag="Share"
                                     tagColor="bg-amber-600"
-                                    title="Build in Public"
-                                    description="Share your learning journey, document your growth, and inspire the next wave of learners."
+                                    title="Connect & Inspire"
+                                    description="Share your journey, connect with people who inspire you, and support each other's growth in a vibrant peer-driven community."
                                     darkMode={darkMode}
                                 />
                             </div>
@@ -281,8 +286,9 @@ function Home({ darkMode }) {
                                 Ready to Start Your Journey?
                             </h2>
                             <p className="text-primary-200 text-base sm:text-lg max-w-xl mx-auto mb-6 sm:mb-8">
-                                Join 500+ students who are already building, learning, and growing
-                                with μLearn VISAT.
+                                At μLearn VIT, students are not just participants — they are creators,
+                                innovators, and leaders. Chase your passion, unlock new opportunities,
+                                and become ready to contribute, lead, and make an impact.
                             </p>
                             <a
                                 href="https://mulearn.org"
