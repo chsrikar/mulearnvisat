@@ -50,7 +50,7 @@ function Navbar({ darkMode, setDarkMode }) {
                         <img
                             src="/mulearn-logo.png"
                             alt="muLearn VISAT"
-                            className="w-9 h-9 rounded-xl object-contain transition-transform duration-300 group-hover:scale-110"
+                            className={`w-9 h-9 rounded-xl object-contain transition-all duration-300 group-hover:scale-110 ${darkMode ? '' : 'brightness-0'}`}
                         />
                         <span className={`font-bold text-lg ${darkMode ? 'text-white' : 'text-surface-900'} transition-colors`}>
                             muLearn <span className="text-primary-600 font-medium">VISAT</span>

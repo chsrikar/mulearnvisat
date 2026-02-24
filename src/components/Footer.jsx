@@ -44,7 +44,7 @@ function Footer({ darkMode }) {
                             <img
                                 src="/mulearn-logo.png"
                                 alt="muLearn VISAT"
-                                className="w-9 h-9 rounded-xl object-contain"
+                                className="w-9 h-9 rounded-xl object-contain brightness-0 invert"
                             />
                             <span className="font-bold text-lg">
                                 muLearn <span className="text-primary-400">VISAT</span>
