@@ -51,7 +51,7 @@ export const leadership = [
     },
     {
         id: 8,
-        name: "Elna",
+        name: "Elna Mary Tomy",
         role: "Design Lead",
         image: "/images/elna.jpeg",
         bio: "Design is about solving problems beautifully. I'm proud to shape the visual identity of muLearn VISAT and mentor aspiring designers along the way.",
@@ -72,8 +72,8 @@ export const committees = [
         color: "primary",
         members: [
             { id: 8, name: "Albin Saju", image: "/images/albin-saju.jpeg" },
-            { id: 9, name: "Anashwara", image: "/images/Anashwara.jpeg" },
-            { id: 10, name: "Amal", image: "/images/Amal.jpeg" },
+            { id: 9, name: "Anashwara Biju", image: "/images/Anashwara.jpeg" },
+            { id: 10, name: "Amal Anil", image: "/images/Amal.jpeg" },
         ],
     },
     {
@@ -81,17 +81,17 @@ export const committees = [
         color: "accent",
         members: [
             { id: 11, name: "Anand M S", image: "/images/anand-ms.jpeg" },
-            { id: 12, name: "Pratham", image: "/images/pratham.jpeg" },
+            { id: 12, name: "Pratham Phukan", image: "/images/pratham.jpeg" },
         ],
     },
     {
         name: "Design Committee",
         color: "emerald",
         members: [
-            { id: 13, name: "Elna", image: "/images/elna.jpeg" },
-            { id: 14, name: "Aryanandana", image: "/images/aryanandana.jpeg" },
-            { id: 15, name: "Gagan", image: "/images/Gagan.jpeg" },
-            { id: 16, name: "Anjana", image: "/images/Anjana.jpeg" },
+            { id: 13, name: "Elna Mary Tomy", image: "/images/elna.jpeg" },
+            { id: 14, name: "Aryanandana K R", image: "/images/aryanandana.jpeg" },
+            { id: 15, name: "Gagan G Nair", image: "/images/Gagan.jpeg" },
+            { id: 16, name: "Anjana R", image: "/images/Anjana.jpeg" },
         ],
     },
     {
@@ -99,8 +99,8 @@ export const committees = [
         color: "amber",
         members: [
             { id: 17, name: "Albin Jose", image: "/images/albin-jose.jpeg" },
-            { id: 18, name: "Abhinand", image: "/images/Abhinand.jpeg" },
-            { id: 19, name: "Tadrupa", image: "/images/Tadrupa.jpeg" },
+            { id: 18, name: "Abhinand Rajesh", image: "/images/Abhinand.jpeg" },
+            { id: 19, name: "Tadrupa Chowdhury", image: "/images/Tadrupa.jpeg" },
         ],
     },
     {
@@ -116,12 +116,12 @@ export const committees = [
 // Interest Group Leads — shown in IG Leads section
 export const igLeads = [
     { id: 20, name: "Alex Benny", role: "IoT", image: "/images/alex-benny.jpeg" },
-    { id: 21, name: "Pratham", role: "Web Development", image: "/images/pratham.jpeg" },
-    { id: 22, name: "Elna", role: "UI/UX", image: "/images/elna.jpeg" },
+    { id: 21, name: "Pratham Phukan", role: "Web Development", image: "/images/pratham.jpeg" },
+    { id: 22, name: "Elna Mary Tomy", role: "UI/UX", image: "/images/elna.jpeg" },
     { id: 23, name: "Albin Jose", role: "Non-Circuit", image: "/images/albin-jose.jpeg" },
-    { id: 24, name: "Rifa", role: "Innovation & Entrepreneurship", image: "/images/rifa.jpeg" },
+    { id: 24, name: "Rifa Thabassum", role: "Innovation & Entrepreneurship", image: "/images/rifa.jpeg" },
     { id: 25, name: "Devika Baiju", role: "Comics", image: "/images/devika-baiju.jpeg" },
-    { id: 26, name: "Srikar", role: "AI & ML", image: "/images/srikar.jpeg" },
+    { id: 26, name: "Chinthapenta Srikar", role: "AI & ML", image: "/images/srikar.jpeg" },
 ]
 
 // Backward-compatible default export
