@@ -170,14 +170,19 @@ function Home({ darkMode }) {
                             </div>
                             <div className="mt-6 sm:mt-8 flex items-center gap-4 sm:gap-6">
                                 <div className="flex -space-x-3">
-                                    {[1, 2, 3, 4].map((i) => (
+                                    {[
+                                        '/images/srikar.jpeg',
+                                        '/images/Amal.jpeg',
+                                        '/images/Anjana.jpeg',
+                                        '/images/pratham.jpeg',
+                                    ].map((src, i) => (
                                         <div
                                             key={i}
                                             className="w-10 h-10 rounded-full border-2 border-white overflow-hidden"
                                         >
                                             <img
-                                                src={`/images/member${i}.png`}
-                                                alt="Member"
+                                                src={src}
+                                                alt="Student"
                                                 className="w-full h-full object-cover"
                                             />
                                         </div>
