@@ -4,6 +4,22 @@ import { Check, Loader2, Mail, MapPin, Send } from 'lucide-react'
 import { cn } from '../lib/utils'
 import emailjs from '@emailjs/browser'
 
+// ── EmailJS env-var validation (runs once at module load) ──────────────
+const EMAILJS_SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const EMAILJS_PUBLIC_KEY   = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
+if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
+    console.error(
+        '[EmailJS] Missing environment variables!\n',
+        `  VITE_EMAILJS_SERVICE_ID  = ${EMAILJS_SERVICE_ID ?? '❌ UNDEFINED'}\n`,
+        `  VITE_EMAILJS_TEMPLATE_ID = ${EMAILJS_TEMPLATE_ID ?? '❌ UNDEFINED'}\n`,
+        `  VITE_EMAILJS_PUBLIC_KEY  = ${EMAILJS_PUBLIC_KEY ?? '❌ UNDEFINED'}\n`,
+        'Make sure these are set in Vercel → Settings → Environment Variables and redeploy.',
+    )
+}
+// ────────────────────────────────────────────────────────────────────────
+
 function Contact({ darkMode }) {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -21,17 +37,31 @@ function Contact({ darkMode }) {
         setIsSubmitting(true)
         setError('')
 
+        // Read values straight from the DOM form — guarantees the data
+        // is correct regardless of React state-batching or minification.
+        const formData = new FormData(e.currentTarget)
+        const nameValue    = formData.get('name')    ?? ''
+        const emailValue   = formData.get('email')   ?? ''
+        const messageValue = formData.get('message')  ?? ''
+
+        // Guard against empty submissions
+        if (!nameValue || !emailValue || !messageValue) {
+            setError('Please fill in all fields.')
+            setIsSubmitting(false)
+            return
+        }
+
         try {
             await emailjs.send(
-                import.meta.env.VITE_EMAILJS_SERVICE_ID,
-                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                EMAILJS_SERVICE_ID,
+                EMAILJS_TEMPLATE_ID,
                 {
-                    name: name,
-                    email: email,
-                    message: message,
-                    time: new Date().toLocaleString(),
+                    name:    nameValue,
+                    email:   emailValue,
+                    message: messageValue,
+                    time:    new Date().toLocaleString(),
                 },
-                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+                EMAILJS_PUBLIC_KEY
             )
 
             setName('')
