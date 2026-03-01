@@ -26,9 +26,10 @@ function Contact({ darkMode }) {
                 import.meta.env.VITE_EMAILJS_SERVICE_ID,
                 import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
                 {
-                    from_name: name,
-                    from_email: email,
+                    name: name,
+                    email: email,
                     message: message,
+                    time: new Date().toLocaleString(),
                 },
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY
             )
@@ -131,6 +132,7 @@ function Contact({ darkMode }) {
                                         </label>
                                         <input
                                             id="contact-name"
+                                            name="name"
                                             type="text"
                                             value={name}
                                             onChange={(e) => setName(e.target.value)}
@@ -160,6 +162,7 @@ function Contact({ darkMode }) {
                                         </label>
                                         <input
                                             id="contact-email"
+                                            name="email"
                                             type="email"
                                             value={email}
                                             onChange={(e) => setEmail(e.target.value)}
@@ -190,6 +193,7 @@ function Contact({ darkMode }) {
                                     </label>
                                     <textarea
                                         id="contact-message"
+                                        name="message"
                                         value={message}
                                         onChange={(e) => setMessage(e.target.value)}
                                         placeholder="Tell us what you're thinking..."
