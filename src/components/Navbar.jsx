@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence, easeInOut } from 'framer-motion'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Moon, Sun } from 'lucide-react'
 import ThemeToggle from './ThemeToggle'
 import SpotlightNavbar from './SpotlightNavbar'
 
@@ -105,11 +105,40 @@ function Navbar({ darkMode, setDarkMode }) {
 
                         {/* Mobile: Toggle + Hamburger */}
                         <div className="flex md:hidden items-center gap-2">
-                            <ThemeToggle
-                                darkMode={darkMode}
-                                setDarkMode={setDarkMode}
-                                className="w-10 h-10"
-                            />
+                            <motion.button
+                                onClick={() => setDarkMode(!darkMode)}
+                                className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 cursor-pointer border-none ${
+                                    darkMode
+                                        ? 'bg-surface-800 text-yellow-400'
+                                        : 'bg-surface-100 text-surface-700'
+                                }`}
+                                aria-label="Toggle dark mode"
+                                whileTap={{ scale: 0.9, rotate: 15 }}
+                            >
+                                <AnimatePresence mode="wait" initial={false}>
+                                    {darkMode ? (
+                                        <motion.div
+                                            key="moon"
+                                            initial={{ rotate: -90, opacity: 0, scale: 0.5 }}
+                                            animate={{ rotate: 0, opacity: 1, scale: 1 }}
+                                            exit={{ rotate: 90, opacity: 0, scale: 0.5 }}
+                                            transition={{ duration: 0.25 }}
+                                        >
+                                            <Moon className="w-5 h-5" />
+                                        </motion.div>
+                                    ) : (
+                                        <motion.div
+                                            key="sun"
+                                            initial={{ rotate: 90, opacity: 0, scale: 0.5 }}
+                                            animate={{ rotate: 0, opacity: 1, scale: 1 }}
+                                            exit={{ rotate: -90, opacity: 0, scale: 0.5 }}
+                                            transition={{ duration: 0.25 }}
+                                        >
+                                            <Sun className="w-5 h-5" />
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </motion.button>
                             <motion.button
                                 onClick={() => setIsOpen(!isOpen)}
                                 className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 cursor-pointer border-none ${darkMode

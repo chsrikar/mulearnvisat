@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import AnimatedTestimonials from '../components/AnimatedTestimonials'
+import AnimatedButton from '../components/AnimatedButton'
 import { leadership, committees, igLeads } from '../data/committee'
 
 const committeeTagColors = {
@@ -287,18 +288,19 @@ function Committee({ darkMode }) {
                         We are always looking for passionate individuals to join our committee
                         and help shape the future of learning at VISAT.
                     </p>
-                    <a
+                    <AnimatedButton
+                        as="a"
                         href="https://mulearn.org"
                         target="_blank"
                         rel="noopener noreferrer"
                         id="cta-join-team"
-                        className="btn-primary no-underline"
+                        variant="primary"
                     >
                         Apply Now
-                        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                         </svg>
-                    </a>
+                    </AnimatedButton>
                 </div>
             </section>
         </div>

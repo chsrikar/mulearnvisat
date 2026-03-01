@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import CrowdCanvas from '../components/CrowdCanvas'
 import RetroCard from '../components/RetroCard'
+import AnimatedButton from '../components/AnimatedButton'
 
 function useScrollReveal() {
     const ref = useRef(null)
@@ -105,38 +106,41 @@ function Home({ darkMode }) {
                         <span className="font-semibold text-primary-600">Experiential Learning</span>
                     </p>
 
-                    {/* CTA Buttons */}
-                    <div className="reveal stagger-4 opacity-0 flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Link to="/events" id="cta-events" className="btn-primary no-underline">
-                            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
-                            </svg>
-                            View Events
-                        </Link>
-                        <a
-                            href="https://mulearn.org"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            id="cta-join"
-                            className="btn-outline no-underline"
-                        >
-                            Join Community
-                            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                            </svg>
-                        </a>
-                    </div>
+                    {/* CTA Buttons + Stats wrapper */}
+                    <div className="reveal stagger-4 opacity-0 inline-flex flex-col items-center sm:items-start">
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                            <AnimatedButton as="link" to="/events" id="cta-events" variant="primary">
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                                </svg>
+                                View Events
+                            </AnimatedButton>
+                            <AnimatedButton
+                                as="a"
+                                href="https://mulearn.org"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                id="cta-join"
+                                variant="outline"
+                            >
+                                Join Community
+                                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                </svg>
+                            </AnimatedButton>
+                        </div>
 
-                    {/* Stats */}
-                    <div className="reveal stagger-5 opacity-0 mt-10 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-3xl mx-auto">
-                        {stats.map((stat) => (
-                            <div key={stat.label} className="text-center">
-                                <p className="text-xl sm:text-2xl md:text-3xl font-bold gradient-text">{stat.value}</p>
-                                <p className={`text-xs md:text-sm mt-1 ${darkMode ? 'text-surface-500' : 'text-surface-400'}`}>
-                                    {stat.label}
-                                </p>
-                            </div>
-                        ))}
+                        {/* Stats */}
+                        <div className="reveal stagger-5 opacity-0 mt-10 sm:mt-16 grid grid-cols-3 gap-6 sm:gap-10 w-full">
+                            {stats.map((stat) => (
+                                <div key={stat.label} className="text-center">
+                                    <p className="text-xl sm:text-2xl md:text-3xl font-bold gradient-text">{stat.value}</p>
+                                    <p className={`text-xs md:text-sm mt-1 ${darkMode ? 'text-surface-500' : 'text-surface-400'}`}>
+                                        {stat.label}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
@@ -189,7 +193,7 @@ function Home({ darkMode }) {
                                     ))}
                                 </div>
                                 <p className={`text-sm ${darkMode ? 'text-surface-400' : 'text-surface-500'}`}>
-                                    <span className="font-semibold text-primary-600">500+</span> students
+                                    <span className="font-semibold text-primary-600">70+</span> students
                                     already learning
                                 </p>
                             </div>
@@ -296,18 +300,19 @@ function Home({ darkMode }) {
                                 innovators, and leaders. Chase your passion, unlock new opportunities,
                                 and become ready to contribute, lead, and make an impact.
                             </p>
-                            <a
+                            <AnimatedButton
+                                as="a"
                                 href="https://mulearn.org"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 id="cta-get-involved"
-                                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-primary-700 font-bold rounded-xl transition-all duration-300 hover:shadow-2xl hover:shadow-white/20 hover:-translate-y-1 cursor-pointer no-underline text-sm sm:text-base"
+                                variant="white"
                             >
                                 Get Involved
-                                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                                 </svg>
-                            </a>
+                            </AnimatedButton>
                         </div>
                     </div>
                 </div>
