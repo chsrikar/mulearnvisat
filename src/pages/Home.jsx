@@ -54,10 +54,9 @@ const features = [
 ]
 
 const stats = [
-    { value: '500+', label: 'Active Members' },
-    { value: '50+', label: 'Events Hosted' },
-    { value: '20+', label: 'Projects Built' },
-    { value: '10+', label: 'Industry Partners' },
+    { value: '70+', label: 'Active Members' },
+    { value: '13+', label: 'Events Hosted' },
+    { value: '15+', label: 'Projects Built' },
 ]
 
 function Home({ darkMode }) {
