@@ -321,8 +321,8 @@ function Contact({ darkMode }) {
                                 <div className="absolute right-8 bottom-12 w-20 h-20 rounded-full bg-white/10" />
 
                                 <div className="relative z-10">
-                                    <div className="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-5">
-                                        <span className="text-2xl font-black">mu</span>
+                                    <div className="w-16 h-16 flex items-center justify-center mb-5">
+                                        <img src="/dc7393e9-570f-4af6-bd7c-576be37c4d3d-removebg-preview.png" alt="muLearn" className="w-full h-full object-contain drop-shadow-lg" />
                                     </div>
                                     <h3 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug mb-3">
                                         Let's build something{' '}

@@ -91,7 +91,14 @@ function Home({ darkMode }) {
                 <div className="container-main relative z-10 text-center py-12 sm:py-16 md:py-20">
                     {/* Heading */}
                     <h1 className="reveal stagger-2 opacity-0 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight mb-4 sm:mb-6">
-                        <span className="animated-gradient-text">muLearn VISAT</span>
+                        <span className="inline-flex items-center justify-center">
+                            <img
+                                src="/dc7393e9-570f-4af6-bd7c-576be37c4d3d-removebg-preview.png"
+                                alt="mu"
+                                className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-24 lg:h-24 object-contain drop-shadow-lg -mr-2 sm:-mr-3 md:-mr-4 lg:-mr-5"
+                            />
+                            <span className="animated-gradient-text">Learn VISAT</span>
+                        </span>
                         <br />
                         <span className={darkMode ? 'text-surface-200' : 'text-surface-800'}>
                             Student Branch
